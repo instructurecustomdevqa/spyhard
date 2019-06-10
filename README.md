@@ -1,24 +1,19 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Requires Ruby v. 2.6.3
 
-Things you may want to cover:
+Usage Guides:
+Apartment: https://github.com/influitive/apartment
+Pundit: https://github.com/varvet/pundit
+Devise: https://github.com/plataformatec/devise
 
-* Ruby version
 
-* System dependencies
+Creating a tenant:
+> rails c
+> create_tenant 'tenant_name'
+> Org.create('tenant_name')
+> quit
+> rake db:migrate
 
-* Configuration
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Org and Model (User model) are single tenant in the 'public' schema
