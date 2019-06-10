@@ -36,6 +36,12 @@ gem 'jbuilder', '~> 2.5'
 # Apartment for multitenancy
  gem 'apartment'
 
+ # Devise for users
+ gem 'devise'
+
+ # Pundit for roles
+ gem 'pundit'
+
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
 
